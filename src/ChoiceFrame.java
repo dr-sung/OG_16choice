@@ -1,4 +1,5 @@
 
+import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.Font;
 import java.awt.GridLayout;
@@ -88,8 +89,8 @@ class ChoiceFrame extends JFrame {
         // add panels to content pane
 
         Container contentPane = getContentPane();
-        contentPane.add(sampleField, "Center");
-        contentPane.add(southPanel, "South");
+        contentPane.add(sampleField, BorderLayout.CENTER);
+        contentPane.add(southPanel, BorderLayout.SOUTH);
 
         setSampleFont();
     }
